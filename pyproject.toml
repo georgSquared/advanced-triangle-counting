@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "advanced-triangle-counting"
 version = "0.1.0"
-description = "A library for graphs in python, built on top of NetworkX, to provide advanced triangle counting algorithm implementations"
+description = "A library for  advanced triangle counting for graphs in python, built on top of NetworkX"
 authors = ["georg <georg.squared@gmail.com>"]
 readme = "README.md"
 
