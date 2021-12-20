@@ -2,7 +2,13 @@
 name = "advanced-triangle-counting"
 version = "0.1.0"
 description = "A library for  advanced triangle counting for graphs in python, built on top of NetworkX"
-authors = ["georg <georg.squared@gmail.com>"]
+authors = [
+    "Avraam Bardas <bardasavram@gmail.com>",
+    "Dimitris Dimoudis <dimoudis.jim@gmail.com>",
+    "Nikos Gkiouzelis <nickgiouzel@gmail.com>",
+    "Sofia <kosofia9@gmail.com>",
+    "George Georgiou <georg.squared@gmail.com>"
+]
 readme = "README.md"
 
 [tool.poetry.dependencies]
