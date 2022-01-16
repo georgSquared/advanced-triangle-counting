@@ -38,3 +38,14 @@ def doulion_node_iterator(G, p=0.9):
     return tc_doulion
 
 
+def doulion_nx(G, p=0.9):
+    for e1, e2 in G.edges:
+        r1 = random.uniform(0, 1)
+        if r1 < p:
+            nx.set_edge_attributes(G, {(e1, e2): {"weight": 1 / p}})
+        else:
+            G.remove_edge(e1, e2)
+    number_of_triangles_doulion_temp = sum(nx.triangles(G).values()) / 3
+    number_of_triangles_doulion = round(number_of_triangles_doulion_temp * (1 / (p ** 3)))
+
+    return number_of_triangles_doulion
