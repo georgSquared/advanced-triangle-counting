@@ -9,7 +9,7 @@ def main():
 
     df1 = pd.read_csv("../CA-GrQc2-small.csv")
     G = nx.from_pandas_edgelist(df1, source="FromNodeId", target="ToNodeId")
-    print(f'number of triangles according to doulion: {doulion_nx(G, p=0.1)}')
+    print(f'number of triangles according to doulion: {doulion_node_iterator(G, p=0.3)}')
 
 
 if __name__ == "__main__":
