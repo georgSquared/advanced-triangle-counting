@@ -9,7 +9,6 @@ from itertools import combinations
 
 def doulion_node_iterator(G, p=0.9):
     for e1, e2 in G.edges:
-        random.seed(10)
         r1 = random.uniform(0, 1)
         if r1 < p:
             nx.set_edge_attributes(G, {(e1, e2): {"weight": 1 / p}})
