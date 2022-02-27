@@ -191,10 +191,10 @@ class Neighborhood_Multi_Sampling:
     returns:
         triangles: the total number of triangles estimated inside the file
     """
-    number = 0
+    number = 0 # used for the batch size
     with open(self.graph, 'r') as f:
-      polyShape = []
-      COUNTER = 0
+      polyShape = [] # will contain edges for each batch
+      COUNTER = 0 # will be printed every 5k edges to wee where we are o far
       for line in f:
         COUNTER += 1
         line = line.split() # to deal with blank
